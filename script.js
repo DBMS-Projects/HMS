@@ -70,6 +70,7 @@ app.post('/appointment', (req, res) => {
               });
 
             }
+            // IF THE DOCTOR IS NOT AVAILABLE THEN WE ARE GONNA SHOW THIS
             else {
               res.send("Sorry!,The doctor is already booked for today");
             }
@@ -84,4 +85,3 @@ app.post('/appointment', (req, res) => {
   }
 
 });
-
